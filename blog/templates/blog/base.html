@@ -1,0 +1,24 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+
+    <head>
+        <h1> Blog em Django 🐍 </h1>
+    </head>
+    
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+</body>
+</html>
